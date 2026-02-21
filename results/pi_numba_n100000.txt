@@ -1,0 +1,36 @@
+=== FIRST RUN (includes JIT compile overhead) ===
+[numba_serial_first]
+n=100000
+pi_est=3.1481200000
+abs_error=0.0065273464
+time_seconds=2.023737
+samples_per_second=49413.54
+time_per_sample=2.023737000069e-05
+
+[numba_parallel_first]
+n=100000
+pi_est=3.1385600000
+abs_error=0.0030326536
+time_seconds=2.525974
+samples_per_second=39588.70
+time_per_sample=2.525973599986e-05
+
+=== SECOND RUN (compiled; steady-state) ===
+[numba_serial_second]
+n=100000
+pi_est=3.1483600000
+abs_error=0.0067673464
+time_seconds=0.005158
+samples_per_second=19388862.88
+time_per_sample=5.157600040548e-08
+
+[numba_parallel_second]
+n=100000
+pi_est=3.1389600000
+abs_error=0.0026326536
+time_seconds=0.001484
+samples_per_second=67367285.96
+time_per_sample=1.484400010668e-08
+
+=== PARALLEL SPEEDUP (steady-state) ===
+speedup_serial_over_parallel=3.4745
