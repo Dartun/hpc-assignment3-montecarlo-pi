@@ -1,0 +1,6 @@
+n=1000
+pi_est=3.2200000000
+abs_error=0.0784073464
+time_seconds=0.000276
+samples_per_second=3620564.71
+time_per_sample=2.762000076473e-07
